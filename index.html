@@ -1,245 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>교사 직업 ㅅ소개</title>
+    <meta charset="UTF-8">
+    <title>항공우주공학과 진로 탐색</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "맑은 고딕", Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-    }
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background-color:#f4f6f9;
+        }
 
-    header {
-      background-color: #4a90e2;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
+        header{
+            background-color:#0b3d91;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
+        nav{
+            background-color:#1d5fd0;
+            padding:15px;
+            text-align:center;
+        }
 
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
 
-    nav {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-    }
+        section{
+            background:white;
+            margin:20px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 5px rgba(0,0,0,0.1);
+        }
 
-    nav button {
-      border: none;
-      background-color: #e9f2ff;
-      padding: 12px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 15px;
-    }
+        h2{
+            color:#0b3d91;
+        }
 
-    nav button:hover {
-      background-color: #4a90e2;
-      color: white;
-    }
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
 
-    nav button.active {
-      background-color: #4a90e2;
-      color: white;
-    }
+        table, th, td{
+            border:1px solid gray;
+        }
 
-    section {
-      display: none;
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
+        th{
+            background-color:#dbe7ff;
+        }
 
-    section.active {
-      display: block;
-    }
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
 
-    h2 {
-      color: #4a90e2;
-      border-bottom: 2px solid #4a90e2;
-      padding-bottom: 10px;
-    }
+        footer{
+            background-color:#0b3d91;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
 
-    p {
-      line-height: 1.8;
-      font-size: 17px;
-    }
-
-    ul {
-      line-height: 2;
-      font-size: 17px;
-    }
-
-    .image-box {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .image-box img {
-      width: 80%;
-      max-width: 500px;
-      border-radius: 15px;
-    }
-
-    .card-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .card {
-      flex: 1;
-      min-width: 220px;
-      background-color: #f0f6ff;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-    }
-
-    .card h3 {
-      color: #2f6fb3;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
 </head>
-
 <body>
 
-  <header>
-    <h1>교사 직업 소개</h1>
-    <p>학생들의 꿈과 성장을 함께 만들어가는 직업</p>
-  </header>
+<header>
+    <h1>항공우주공학과 진로 탐색</h1>
+    <p>교과 내용과 연계한 항공우주공학 진로 소개</p>
+</header>
 
-  <nav>
-    <button class="tab-button active" onclick="showTab('intro')">직업 소개</button>
-    <button class="tab-button" onclick="showTab('work')">하는 일</button>
-    <button class="tab-button" onclick="showTab('ability')">필요한 능력</button>
-    <button class="tab-button" onclick="showTab('path')">되는 방법</button>
-    <button class="tab-button" onclick="showTab('future')">전망과 가치</button>
-  </nav>
+<nav>
+    <a href="#intro">학과 소개</a>
+    <a href="#subject">교과 연계</a>
+    <a href="#skill">필요 역량</a>
+    <a href="#future">진로 전망</a>
+</nav>
 
-  <section id="intro" class="active">
-    <h2>교사란?</h2>
+<section id="intro">
+    <h2>1. 항공우주공학과란?</h2>
     <p>
-      교사는 학생들에게 지식을 가르치고, 올바른 인성과 태도를 기를 수 있도록 돕는 직업입니다.
-      단순히 교과 내용을 전달하는 사람을 넘어 학생들이 자신의 꿈을 찾고 성장할 수 있도록 이끌어 주는 중요한 역할을 합니다.
+        항공우주공학은 비행기, 드론, 인공위성, 로켓, 우주선 등을
+        설계하고 개발하는 학문이다.
+        물리학, 수학, 정보기술을 활용하여 하늘과 우주를 탐구한다.
     </p>
+</section>
 
-    <div class="image-box">
-      <img src="teacher.jpg" alt="교사 이미지">
-    </div>
-  </section>
+<section id="subject">
+    <h2>2. 교과 내용과 진로 연계</h2>
 
-  <section id="work">
-    <h2>교사가 하는 일</h2>
-    <ul>
-      <li>학생들에게 교과 내용을 가르칩니다.</li>
-      <li>학생들의 생활 습관과 인성을 지도합니다.</li>
-      <li>시험, 수행평가, 과제 등을 통해 학습 상태를 평가합니다.</li>
-      <li>진로 상담을 통해 학생들이 미래를 준비하도록 돕습니다.</li>
-      <li>학급 운영, 학교 행사, 동아리 활동 등을 지도합니다.</li>
-    </ul>
-  </section>
+    <table>
+        <tr>
+            <th>교과</th>
+            <th>배운 내용</th>
+            <th>항공우주공학과의 연계</th>
+        </tr>
 
-  <section id="ability">
-    <h2>교사에게 필요한 능력</h2>
+        <tr>
+            <td>수학</td>
+            <td>함수, 미분, 적분</td>
+            <td>로켓 궤도 계산, 비행 경로 설계</td>
+        </tr>
 
-    <div class="card-container">
-      <div class="card">
-        <h3>의사소통 능력</h3>
-        <p>학생들과 잘 대화하고 이해하는 능력이 필요합니다.</p>
-      </div>
+        <tr>
+            <td>물리학</td>
+            <td>운동 법칙, 힘, 에너지</td>
+            <td>항공기 비행 원리와 추진 시스템 이해</td>
+        </tr>
 
-      <div class="card">
-        <h3>전문 지식</h3>
-        <p>가르치는 과목에 대한 깊은 이해가 필요합니다.</p>
-      </div>
+        <tr>
+            <td>화학</td>
+            <td>연소 반응, 물질의 성질</td>
+            <td>로켓 연료 개발 및 추진제 연구</td>
+        </tr>
 
-      <div class="card">
-        <h3>책임감</h3>
-        <p>학생들의 성장에 책임감을 가지고 지도해야 합니다.</p>
-      </div>
+        <tr>
+            <td>정보</td>
+            <td>프로그래밍, 알고리즘</td>
+            <td>인공위성 제어 및 자율비행 시스템 개발</td>
+        </tr>
 
-      <div class="card">
-        <h3>공감 능력</h3>
-        <p>학생들의 고민과 감정을 이해하는 태도가 중요합니다.</p>
-      </div>
-    </div>
-  </section>
+        <tr>
+            <td>영어</td>
+            <td>과학 기술 문서 읽기</td>
+            <td>NASA 및 국제 연구 자료 활용</td>
+        </tr>
 
-  <section id="path">
-    <h2>교사가 되는 방법</h2>
-    <p>
-      교사가 되기 위해서는 보통 사범대학이나 교육대학에 진학하거나,
-      일반 대학에서 교직 과정을 이수해야 합니다.
-      이후 교원 자격증을 취득하고 임용시험에 합격하면 국공립학교 교사가 될 수 있습니다.
-    </p>
+    </table>
+</section>
+
+<section id="skill">
+    <h2>3. 필요한 역량</h2>
 
     <ul>
-      <li>초등교사: 교육대학교 진학</li>
-      <li>중등교사: 사범대학 또는 교직 이수</li>
-      <li>교원 자격증 취득</li>
-      <li>교원 임용시험 준비 및 합격</li>
+        <li>수학적 사고력</li>
+        <li>물리 개념 이해 능력</li>
+        <li>문제 해결 능력</li>
+        <li>프로그래밍 능력</li>
+        <li>창의적 설계 능력</li>
+        <li>협업 및 의사소통 능력</li>
     </ul>
-  </section>
+</section>
 
-  <section id="future">
-    <h2>교사의 전망과 가치</h2>
-    <p>
-      인공지능과 디지털 기술이 발전해도 학생을 이해하고 정서적으로 지지하는 교사의 역할은 여전히 중요합니다.
-      앞으로의 교사는 지식을 전달하는 사람뿐만 아니라 학생의 진로를 함께 고민하고,
-      창의력과 문제 해결력을 키워 주는 조력자의 역할을 하게 될 것입니다.
-    </p>
-  </section>
+<section id="future">
+    <h2>4. 미래 진로</h2>
 
-  <footer>
-    <p>© 2026 나의 진로 소개 웹사이트</p>
-  </footer>
+    <ul>
+        <li>항공기 설계 엔지니어</li>
+        <li>우주항공 연구원</li>
+        <li>인공위성 개발자</li>
+        <li>로켓 추진 연구원</li>
+        <li>드론 시스템 개발자</li>
+        <li>우주 탐사 프로젝트 연구원</li>
+    </ul>
+</section>
 
-  <script>
-    function showTab(tabId) {
-      const sections = document.querySelectorAll("section");
-      const buttons = document.querySelectorAll(".tab-button");
-
-      sections.forEach(section => {
-        section.classList.remove("active");
-      });
-
-      buttons.forEach(button => {
-        button.classList.remove("active");
-      });
-
-      document.getElementById(tabId).classList.add("active");
-      event.target.classList.add("active");
-    }
-  </script>
+<footer>
+    <p>2026 진로 탐색 프로젝트 | 항공우주공학과</p>
+</footer>
 
 </body>
 </html>
